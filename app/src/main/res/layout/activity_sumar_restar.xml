@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SumarRestar">
+
+    <Button
+        android:id="@+id/sum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="114dp"
+        android:text="+2" />
+
+    <Button
+        android:id="@+id/sum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sum2"
+        android:layout_toLeftOf="@id/sum2"
+        android:text="+1" />
+
+    <Button
+        android:id="@+id/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sum1"
+        android:layout_toLeftOf="@id/sum1"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/res1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zero"
+        android:layout_toRightOf="@id/zero"
+        android:text="-1" />
+
+    <Button
+        android:id="@+id/res2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res1"
+        android:layout_toRightOf="@id/res1"
+        android:text="-2" />
+
+    <TextView
+        android:id="@+id/consola"
+        android:layout_width="395dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/res2"
+        android:layout_marginRight="-195dp"
+        android:layout_toLeftOf="@id/res2"
+        android:gravity="center"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/previousFromSumRes"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/consola"
+        android:layout_alignLeft="@id/res1"
+        android:text="Previous Page" />
+
+</RelativeLayout>
